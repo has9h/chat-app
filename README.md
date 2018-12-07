@@ -1,6 +1,6 @@
 # Simple Chat App with Timer
 
-*Simple Chat Application using express.js. The following the chat features/functionalities:*
+*Simple Chat Application using express.js. The following are the chat features/functionalities:*
 
 ## Required Modules:
 
