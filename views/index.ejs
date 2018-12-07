@@ -1,0 +1,64 @@
+<% include ./partials/header.ejs %>
+
+  <head>
+    <title>Chat</title>
+  </head>
+  
+
+  <body id="chatbody">
+    <div class="container">
+      <div id="userform" class="row">
+        <div class="col-md-6 col-md-offset-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form id="userForm">
+                <div class="form-group">
+                  <label>Enter Username:</label>
+                  <input class="form-control" id="username"/>
+                  <br />
+                  <label>Enter Session Name:</label>
+                  <input class="form-control" id="sessionname" />
+                  <br />
+                  <input type="submit" class="btn btn-primary" value="Login" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="messageArea" class="row">
+        <div class="col-md-4">
+          <div class="well">
+            <h3>Members</h3>
+            <ul class="list-group" id="users"></ul>
+            <h3>Timer</h3>
+            <p id="timer"></p>
+            <button id="startbtn">Start</button>
+            <button id="stopbtn">Stop</button>
+          </div>
+        </div>
+
+        <!-- Main chat area -->
+        <div class="col-md-8">
+          <div class="chat" id="chat">
+            <form id="messageForm">
+              <div class="form-group">
+                <label>Enter Message:</label>
+                <textarea class="form-control" id="message">
+                </textarea>
+                <br />
+                <button id="messagebtn" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+<% include ./partials/footer.ejs %>

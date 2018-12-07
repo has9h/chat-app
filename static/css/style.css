@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+/*Chat Page*/
+#chatbody{
+    background-color: #B9D3EE;
+}
+
+#messageArea{
+  display:none;
+}
+
+#messagebtn{
+    display: none;
+}
+
+#userform{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+/*Login Page*/
+#loginbtn {
+    background-color: tan;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#loginbtn:hover {
+    opacity: 0.8;
+}
+
+#loginPage, html{
+    font-family: sans-serif;
+    color: white;
+    height: 100%;
+}
+
+#loginPage{
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color:  darkolivegreen !important;
+}
+
+#loginForm{
+    width: 500px;
+    margin-top: 180px;
+}
+

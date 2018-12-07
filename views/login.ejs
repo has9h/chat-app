@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+<head>
+  <title>Login Page</title>
+</head>
+
+<body id="loginPage">
+   <div class="container" id="loginForm">
+        <form>
+            <div class="form-group">
+                <label for="name"><b>Username</b></label>
+                <input class="form-control" type="text" placeholder="Enter Username" name="name" id="username"/>
+            </div>
+            
+            <button type= "button" id= "loginbtn">Login</button>
+            <br>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+<% include ./partials/footer.ejs %>
